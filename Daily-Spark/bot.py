@@ -24,6 +24,7 @@ if not TOKEN:
     raise RuntimeError("DISCORD_TOKEN environment variable is required.")
 
 intents = discord.Intents.none()
+intents.guilds = True
 
 
 class MotivationBot(commands.Bot):
